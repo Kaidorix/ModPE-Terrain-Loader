@@ -87,7 +87,7 @@ var h7f = {
 };
 
 function Loader(TerrainFile) {
-	var TerrainFileContent = h7f.read(new h7f.select(ExternStorage, TerrainFile + ".sd"));
+	var TerrainFileContent = h7f.read(new h7f.select(ExternStorage, TerrainFile + ".terra"));
 	var TerrainLines = TerrainFileContent.split('\n');
 	var TerrainData = [];
 	for (var i = 0; i < TerrainLines.length; i++) {
